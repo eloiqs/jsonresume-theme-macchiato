@@ -2,9 +2,11 @@
     {{#if summary}}
         <div class="container summary-container">
             {{> title value="Summary"}}
+            {{#each summary}}
             <p class="summary">
-                {{summary}}
+                {{this}}
             </p>
+            {{/each}}
         </div>
     {{/if}}
 {{/resume.basics}}
